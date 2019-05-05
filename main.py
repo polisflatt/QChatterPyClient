@@ -2,13 +2,14 @@ import libqchatterpy.QChatterChannel
 import libqchatterpy.QChatterPyFunctions
 import libqchatterpy.QChatterServer
 import libqchatterpy.QChatterUser
-import libqchatterpy.constants
+import constants
 
 QChatterChannel = libqchatterpy.QChatterChannel
 QChatterPyFunctions = libqchatterpy.QChatterPyFunctions
 QChatterServer = libqchatterpy.QChatterServer
 QChatterUser = libqchatterpy.QChatterUser
-constants = libqchatterpy.constants
+constants = constants
+
 
 from libqchatterpy.QChatterPyFunctions import error_codes
 from libqchatterpy.QChatterPyFunctions import translate

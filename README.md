@@ -21,7 +21,7 @@ To run you will need:
  - Blessed Python Library (Terminal colors, formatting, etc) `sudo pip install blessed`
  - Knowledge of Python 3, because you need to edit configuration files written lazily in Python 3 and you must be able to deal with errors, due to the instability and crudeness of the program. [Python 3 Documentation here](https://docs.python.org/3/)
 
-Before you begin, you may want to edit the **settings.py** ~~and **constants.py**~~ file, which contains both some options and the server URL. 
+Before you begin, you may want to edit the **settings.py** and **constants.py** file, which contains both some options and the server URL. 
 
 Run **main.py** with Python 3 and get ready for any kind of error. Fix them, then, you will be asked for a username and password. There is a 99.99% chance that you don't have one! You must register an account. 
 
