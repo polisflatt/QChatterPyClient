@@ -9,6 +9,7 @@ QChatterPyClient is a *free* program written in Python 3 that interfaces with QC
 To run you will need:
 
  - Python 3 (3.6+, most likely; I don't know)
+ - libQChatterPy (`sudo pip install libQChatterPy`)
  - Asyncio Python Library (asynchronous programming) 
  - PyGame Python Library (sound)
  - Blessed Python Library (Terminal colors, formatting, etc)
