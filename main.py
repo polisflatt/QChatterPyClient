@@ -15,19 +15,6 @@ from libqchatterpy.QChatterPyFunctions import translate
 from libqchatterpy.QChatterPyFunctions import printerror
 from libqchatterpy.QChatterPyFunctions import helpmenu
 
-import QChatterChannel
-import QChatterUser
-import QChatterServer 
-
-import QChatterPyFunctions
-
-from QChatterPyFunctions import error_codes
-from QChatterPyFunctions import translate
-from QChatterPyFunctions import printerror
-from QChatterPyFunctions import helpmenu
-
-
-import constants
 
 
 import sys
@@ -77,15 +64,6 @@ def getmessages(qchannel, quser):
                     human_time = time.ctime(int(json_decode["time"]))
                     title_status = json_decode["title_status"]
                     font_type = json_decode["font_type"]
-
-            messages = quser.obtainUserMessageFromChannel(qchannel.channel).split("\n")
-            #print(messages)
-            for message in messages:
-                if (str(message) != "50000"):
-                    json_decode = json.loads(message)
-                    human_time = time.ctime(int(json_decode["time"]))
-                    title_status = json_decode["title_status"]
-                    font_type = json_decode["font_type"];
 
                     
 
@@ -170,7 +148,6 @@ async def main():
 
     _channel = input("Channel: ")
     qchannel = QChatterChannel.QChatterChannel(_channel, quser)
-    qchannel = QChatterChannel.QChatterChannel(_channel)
 
     #print(QChatterUser.obtainUserMessageFromChannel(username, password, channel))
     #print(qchannel.returnChannelDescription())
@@ -183,6 +160,7 @@ async def main():
         sys.stdout.write("\033[K") #clear line
         message_no_slash = message.replace("/", "", 1)
         message_split = message_no_slash.split(" ")
+        
         if (message_split[0] == "/"):
             print(term.red("--- DID YOU TYPE A COMMAND? MAKE SURE THE FIRST CHARACTER IS A SLASH! YOU MIGHT REVEAL THE PASSWORD ---"))
             continue
@@ -218,11 +196,7 @@ async def main():
 
 
         else:
-
             print(qchannel.sendMessage(message))
-
-            print(qchannel.sendMessage(quser.username, message, quser.password))
-
             #printerror(translate(response))
             print("[{time}]  <{title}> {content}".format(time = time.ctime(time.time()), title = term.red(username), content = message))
             #sys.stdout.write("\033[F") #back to previous line
