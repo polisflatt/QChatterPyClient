@@ -5,6 +5,8 @@ A client for QChatter made in Python using QChatterPy
 *QChatterPyClient, version 1.5*
 *Cleanup Edition*
 
+*Server is at http://polisflatt.servehttp.com!*
+
 ## Screenshots
 ![enter image description here](https://i.ibb.co/6mGj4py/2019-05-05-152410-1213x626-scrot.png)
 ![enter image description here](https://i.ibb.co/7QCZ4Jv/2019-05-05-162659-1336x717-scrot.png)
