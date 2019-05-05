@@ -1,7 +1,8 @@
 # QChatterPyClient
 A client for QChatter made in Python using QChatterPy
 
-*QChatterPyClient, version 1.0*
+*QChatterPyClient, version 1.5*
+*Cleanup Edition*
 
 QChatterPyClient is a *free* program written in Python 3 that interfaces with QChatterServer, and acts as a client, being able to send and receive messages from two or more parties. It also includes the QChatterPy library that can interface with QChatterServer on a level more easier to create external programs for. This program is not a TUI nor it is a GUI, but rather, it is a simple terminal program that gets from stdin and outputs to stdout. It is a very basic program, and is mainly a proof of concept.
 
