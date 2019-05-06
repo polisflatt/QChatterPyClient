@@ -1,21 +1,27 @@
+
 # QChatterPyClient
 A client for QChatter made in Python using QChatterPy
 
 *QChatterPyClient, version 1.5*
 *Cleanup Edition*
 
+## Screenshots
+![enter image description here](https://i.ibb.co/6mGj4py/2019-05-05-152410-1213x626-scrot.png)
+![enter image description here](https://i.ibb.co/7QCZ4Jv/2019-05-05-162659-1336x717-scrot.png)
+## Information
 QChatterPyClient is a *free* program written in Python 3 that interfaces with QChatterServer, and acts as a client, being able to send and receive messages from two or more parties. It also includes the QChatterPy library that can interface with QChatterServer on a level more easier to create external programs for. This program is not a TUI nor it is a GUI, but rather, it is a simple terminal program that gets from stdin and outputs to stdout. It is a very basic program, and is mainly a proof of concept.
 
 To run you will need:
 
  - Python 3 (3.6+, most likely; I don't know)
- - libQChatterPy (`sudo pip install libQChatterPy`)
- - Asyncio Python Library (asynchronous programming) 
- - PyGame Python Library (sound)
- - Blessed Python Library (Terminal colors, formatting, etc)
- - Knowledge of Python 3, because you need to edit configuration files written lazily in Python 3 and you must be able to deal with errors, due to the instability and crudeness of the program.
+ - libQChatterPy `sudo pip install libQChatterPy`
+ - Requests Python Library `sudo pip install requests`
+ - Asyncio Python Library (asynchronous programming)  `sudo pip install asyncio`
+ - PyGame Python Library (sound) `sudo install pygame`
+ - Blessed Python Library (Terminal colors, formatting, etc) `sudo pip install blessed`
+ - Knowledge of Python 3, because you need to edit configuration files written lazily in Python 3 and you must be able to deal with errors, due to the instability and crudeness of the program. [Python 3 Documentation here](https://docs.python.org/3/)
 
-Before you begin, you may want to edit the **settings.py** and **constants.py** file, which contains both some options and the server URL. 
+Before you begin, you may want to edit the **settings.py** ~~and **constants.py**~~ file, which contains both some options and the server URL. 
 
 Run **main.py** with Python 3 and get ready for any kind of error. Fix them, then, you will be asked for a username and password. There is a 99.99% chance that you don't have one! You must register an account. 
 
