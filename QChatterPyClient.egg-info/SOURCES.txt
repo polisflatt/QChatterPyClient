@@ -1,0 +1,10 @@
+README.md
+constants.py
+notification.mp3
+qchatterpy
+settings.py
+setup.py
+QChatterPyClient.egg-info/PKG-INFO
+QChatterPyClient.egg-info/SOURCES.txt
+QChatterPyClient.egg-info/dependency_links.txt
+QChatterPyClient.egg-info/top_level.txt
